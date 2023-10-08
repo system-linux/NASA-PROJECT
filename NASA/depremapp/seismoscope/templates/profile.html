@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Profil Ayarları</title>
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+<body>
+
+<div class="profile-section">
+    <h2>Kullanıcı Bilgileri</h2>
+    <p>Ad: {{ user.username }}</p>
+    <p>E-posta: {{ user.email }}</p>
+    <p>Ülke: {{ user.last_name }}</p>
+    <button class="logout-button" id="logout"><a href="/logout">Çıkış Yap</a></button>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'settings.css'%}">
+  <title>Settings</title>
+</head>
+<body>
+  <div class="settings-container">
+    <h1>Settings</h1>
+    
+    <div class="setting">
+      <h2>Log Out</h2>
+      <button class="logout-button" id="logout"><a href="/logout">Log Out</a></button>
+    </div>
+
+    <div class="setting">
+      <h2>About Credits and Program</h2>
+      <p>SeismoRadar compares disaster data around the world, allowing you to view all data in one site. This is a non-profit project. </p>
+      <p>Kandilli Rasathanesi: </p>
+      <p>NASA EONET: </p>
+      <p>NASA FIRMS: </p>
+      <p>OpenMaps: </p>
+      <p>USGS: </p>
+      <p>2023 ©️ - TechCrafters Team/ SeismoRadar WebSite v.1.0/ All Rights Reserved</p>
+      <p>This website is not for profit. All rights of the website belong to the TechCrafters team.</p>
+      <p>Membership data is processed in accordance with the scope of KVKK.</p>
+    </div>
+
+    <div class="setting">
+        <form action="" method="POST">
+            <h2>FeedBack</h2>
+            <p>Help us improve our service! Your feedback is important to us.</p>
+            <textarea name="feedback-input" id="feedback-input" placeholder="Yorumlarınız, önerileriniz ve şikayetleriniz"></textarea>
+            <button id="submit-feedback">Send FeedBack</button>
+            {% csrf_token %}
+          </form>
+    </div>
+  </div>
+<script>
+
+
+$("#logout").onclick= function () {
+  window.location.href = "logout";
+};
+  
+</script>
+<script src="{% static 'jq.min.js' %}"></script>
+<script src="{% static 'script2.js' %}"></script>
+</body>
+</html>

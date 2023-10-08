@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#blog-add-panel {
+  padding: 20px;
+}
+
+.blog-add-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-add-form h2 {
+  margin-bottom: 10px;
+}
+
+.blog-add-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.blog-add-form input,
+.blog-add-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-add-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.blog-add-form button:hover {
+  background-color: #555;
+}

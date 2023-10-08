@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog - Blog Ekle</title>
+    <link rel="stylesheet" href="{%static 'blogadd.css'%}">
+</head>
+<body>
+    <header>
+        <h1>GeoBlogger - AddBlog </h1>
+        
+    </header>
+
+    <section id="blog-add-panel">
+        <div class="blog-add-form">
+            <h2>Add Blog</h2>
+            <form method="POST">
+                <label for="title">Text Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+
+                <label for="content">Contents:</label><br>
+                <textarea id="content" name="content" rows="6"></textarea><br>
+
+                <button type="submit">Send</button>
+                <button type="submit" id="logout"><a href="/blog">Go to GeoBlogger HomePage</a></button>
+
+                <script src="{% static 'script2.js' %}"></script>
+                {% csrf_token %}
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 TechCrafters - SeismoRadar</p>
+    </footer>
+</body>
+</html>

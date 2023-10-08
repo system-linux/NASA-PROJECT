@@ -1,0 +1,92 @@
+.chatDiv {
+    width: 100%;
+}
+.list-group {
+    width: 100%;
+}
+.container {
+    max-width: 90%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: auto;
+}
+.card {
+    min-width: 90%;
+}
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+.panel5 {
+  border: 1px solid rgb(27, 26, 26); /* Panel kenarlığı */
+  
+  padding: 20px; /* Panel iç boşluğu */
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  background-color: white; /* Panel arka plan rengi */
+  border-radius: 10px; /* Panel kenar yuvarlaklığı */
+  margin: 20px auto; /* Paneli sayfanın ortasına al */
+  margin-right: 500px;
+  overflow-y: auto;
+  color: black;
+  margin: 0 auto; /* Otomatik olarak yatayda ortalama */
+}
+
+.gonder{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .custom-input {
+    position: relative;
+    margin: 20px;
+  }
+  
+  .custom-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .custom-input input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  

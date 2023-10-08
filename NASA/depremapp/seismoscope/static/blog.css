@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+blog-post {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+blog-post h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
